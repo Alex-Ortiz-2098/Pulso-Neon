@@ -7,54 +7,53 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
-    <title>Symphony of Records</title>
+    <title>Pulso Neon</title>
 </head>
 <body>
     <header class="barra-superior">         <!-- Todo lo relacionado con la Barra superior -->
-        <div class="barra-superior__izquierda">
-            <button data-icon="menu">menu</button>
-            <p class="barra-superior__titulo"><a href="./index.html">Symphony of Records</a></p>
-        </div>
+            <button aria-label="menu" type="button" class= "boton-de-menu"data-icon="menu">menu</button>
+            <h1 class="barra-superior__titulo"><a href="./index.html">Pulso Neon</a></h1>
         <nav class="barra-superior__nav">
             <ul class="barra-superior__lista">
                 <li><a href="./index.html" class="barra-superior__enlace">Home</a></li>
                 <li><a href="./pages/Contacto" class="barra-superior__enlace">Contacto</a></li>
             </ul>
         </nav>
-            <div class="barra-superior__derecha">
-                <button data-icon="carrito">carrito</button>
-            </div>
+                <button aria-label="carrito" type="button" class= "boton-de-carrito" data-icon="carrito">carrito</button>
     </header>
     <main>
-            <section class="album"> <!-- Todo lo relacionado con la portada del Album -->
-                <span class="album__recomendacion">Recomendacion</span>
-                <h2 class="album__nombre">thriller</h2>
-                <p class="album__descripcion">Thriller es el sexto álbum de estudio de Michael Jackson , lanzado por Epic Records el 30 de noviembre de 1982. 
-                Este album consta de 9 canciones de Jackson (11 para la edición especial de 2008).</p>
-                <div class="album__botones">
-                    <button class="album__boton__album__boton--comprar">Comprar</button>
-                    <button class="album__boton">Ver album</button>
+            <section class="lanzamiento"> <!-- Todo lo relacionado con la portada del Album -->
+                <div class="lanzamiento__contenedor">
+                    <span class="lanzamiento__anuncio">New Lanzamiento</span>
+                    <h2 class="lanzamiento__nombre">El Redragon K552 Kumara</h2>
+                    <p class="lanzamiento__descripcion">El Redragon K552 Kumara no es un teclado gamer común. Tiene ultima-tecnología, 
+                        características premium, plástico ABS, teclas moldeadas, switches de gama alta, retroiluminación LED RGB..</p>
+                    <div class="lanzamiento__botones">
+                        <button aria-label="Comprar" type="button" class="lanzamiento__boton lanzamiento__boton--comprar">Comprar</button>
+                        <button aria-label="Inspeccionar" type="button" class="lanzamiento__boton">Inspeccionar</button>
+                    </div>
                 </div>
+                
             </section>
 
             <section class="Lista-Productos">
-                <h2>Vinilos disponibles</h2>
+                <h2>Catalogo disponibles</h2>
                 <div class="contenedor-tarjerta">
                     <article class="tarjeta-producto">
-                        <img src="./img/Album de Megadeth.jpg" alt="Album de Megadeth">
-                        <h3 class="">Countdown to Extinction</h3>
+                        <img src="./img/NEON-STRIKE M1.png" alt="neon-strike-m1">
+                        <h3 class="">NEON-STRIKE M1</h3>
                         <p>$120,000</p>
                     </article>
                     <div class="contenedor-tarjerta">
                     <article class="tarjeta-producto">
-                        <img src="./img/Album de Queen.jpeg" alt="Album de Queen">
-                        <h3 class=""> A Night at the Opera </h3>
+                        <img src="./img/PULSE-WAVE X .png" alt="pulse-wave-x">
+                        <h3 class=""> PULSE-WAVE X </h3>
                         <p>$90,000</p>
                     </article>
                     <div class="contenedor-tarjerta">
                     <article class="tarjeta-producto">
-                        <img src="./img/thriller-multi-platino.jpg" alt="Album de Michael Jackson">
-                        <h3 class=""> Triller </h3>
+                        <img src="./img/VISION-ULTRA 49.png" alt="vision-ultra-49">
+                        <h3 class=""> VISION-ULTRA 49 </h3>
                         <p>$129,000</p>
                     </article>
 
