@@ -88,24 +88,8 @@ body{
   margin: 1rem;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* LANZAMINETO */
+
 .lanzamiento{
   min-height:  100vh;
   padding: 0rem 8.0rem;
@@ -183,11 +167,126 @@ body{
   border: 1px var(--color-neutral) solid;
 }
 
+/* CATALOGO */
+.lista-productos__titulo{
+  font-family: var(--fuente-titulo);
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: 600; 
+  text-align: center;
+  padding-bottom: 2rem;
+}
 
+.lista-productos {
+    padding: 4rem 6rem;
+}
 
+.lista-productos__contenedor {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));    
+    gap: 2rem;
+}
 
+.tarjeta-producto {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(18, 18, 24);
+    border-radius: 0.8rem;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+}
 
+.tarjeta-producto__imagen {
+    width: 100%;
+    padding: 1rem;
+    object-fit: cover;
+}
 
+.tarjeta-producto__info {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.tarjeta-producto__catalogo {
+    font-size: 1.1rem;
+    font-family: var(--fuente-titulo);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: rgba(177, 175, 175, 0.7);
+}
+
+.tarjeta-producto__titulo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    font-family: var(--fuente-titulo);
+    text-transform: uppercase;
+    color: white;
+}
+
+.tarjeta-producto__fila-inferior {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.5rem;
+}
+
+.tarjeta-producto__precio {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-primario);
+    font-family: var(--fuente-titulo);
+}
+
+.tarjeta-producto__button {
+    background-color: rgba(255, 255, 255, 0.08);
+    border: none;
+    border-radius: 0.8rem;
+    padding: 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tarjeta-producto__button img {
+    width: 2rem;
+    height: 2rem;
+}
+
+/* footer */
+.footer {
+    background-color: var(--color-neutral);
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.footer__descripcion {
+    font-family: var(--fuente-cuerpo);
+    font-size: 1.4rem;
+    color: rgb(255, 255, 255);
+}
+
+.footer__iconos {
+    display: flex;
+    list-style: none;
+    gap: 3rem;
+}
+
+.footer__icono {
+    width: 2.4rem;
+    height: 2.4rem;
+    object-fit: contain;
+    transition: opacity 0.2s;
+}
+
+.footer__icono:hover {
+    opacity: 0.7;
+}
 
 
 

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/style.css">
+        <title>Contacto</title>
+    </head>
+    <body>
+        <header class="barra-superior">         <!-- Todo lo relacionado con la Barra superior -->
+            <button aria-label="menu" type="button" class= "boton-de-menu" data-icon="menu"><img src="../icon/menu.svg" alt="boton de menu"></button>
+            <h1 class="barra-superior__titulo"><a href="../index.html">Pulso Neon</a></h1>
+            <nav class="barra-superior__nav">
+                <ul class="barra-superior__lista">
+                    <li><a href="../index.html" class="barra-superior__enlace">Home</a></li>
+                    <li><a href="../pages/contacto.html" class="barra-superior__enlace">Contacto</a></li>
+                </ul>
+            </nav>
+                <button aria-label="carrito" type="button" class= "boton-de-carrito" data-icon="carrito"><img src="../icon/shopping.svg" alt="boton de carrito"></button>
+        </header>
+        
+        <main>
+            <form action="https://formspree.io/f/mpqbrjqw" method="POST">
+                <label>
+                    Your email:
+                    <input type="email" name="email">
+                </label>
+                <label>
+                    Your message:
+                    <textarea name="message"></textarea>
+                </label>
+                <!-- your other form fields go here -->
+                <button type="submit">Send</button>
+            </form>
+
+
+        </main>
+
+        <footer class="footer">
+            <p class="footer__descripcion">Sitio Realizado por Alex</p>
+            <ul class="footer__iconos">
+                <li><a href="https://wa.me/tunumero" target="_blank"><img class="footer__icono" src="../icon/icon-whatsapp.png" alt="Whatsapp"></a></li>
+                <li><a href="https://www.linkedin.com/in/alex-mat%C3%ADas-ortiz/" target="_blank"><img class="footer__icono" src="../icon/icon-linkedin.png" alt="LinkedIn"></a></li>
+                <li><a href="https://www.instagram.com/matiu112__?igsh=MWwzdWJjN2t0cnV0bA==" target="_blank"><img class="footer__icono" src="../icon/icon-instagram.png" alt="Instagram"></a></li>
+            </ul>
+        </footer>
+    </body>
+</html>

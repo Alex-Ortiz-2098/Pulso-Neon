@@ -10,7 +10,7 @@
 </head>
 <body>
     <header class="barra-superior">         <!-- Todo lo relacionado con la Barra superior -->
-            <button aria-label="menu" type="button" class= "boton-de-menu"data-icon="menu">menu</button>
+            <button aria-label="menu" type="button" class= "boton-de-menu" data-icon="menu"><img src="./icon/menu.svg" alt="boton de menu"></button>
             <h1 class="barra-superior__titulo"><a href="./index.html">Pulso Neon</a></h1>
         <nav class="barra-superior__nav">
             <ul class="barra-superior__lista">
@@ -18,10 +18,11 @@
                 <li><a href="./pages/contacto.html" class="barra-superior__enlace">Contacto</a></li>
             </ul>
         </nav>
-                <button aria-label="carrito" type="button" class= "boton-de-carrito" data-icon="carrito">carrito</button>
+                <button aria-label="carrito" type="button" class= "boton-de-carrito" data-icon="carrito"><img src="./icon/shopping.svg" alt="boton de carrito"></button>
     </header>
+
     <main>
-            <section class="lanzamiento"> <!-- Todo lo relacionado con la portada del Album -->
+        <section class="lanzamiento"> <!-- Todo lo relacionado con la portada del Album -->
                 <div class="lanzamiento__contenedor">
                     <span class="lanzamiento__anuncio">New Lanzamiento</span>
                     <h2 class="lanzamiento__titulo">Redragon K552 Kumara</h2>
@@ -35,29 +36,57 @@
                 
             </section>
 
-            <section class="Lista-Productos">
-                <h2>Catalogo disponibles</h2>
-                <div class="contenedor-tarjerta">
+            <section class="lista-productos">
+                <h2 class="lista-productos__titulo">Catalogo disponibles</h2>
+                <div class="lista-productos__contenedor">
                     <article class="tarjeta-producto">
-                        <img src="./img/NEON-STRIKE M1.png" alt="neon-strike-m1">
-                        <h3 class="">NEON-STRIKE M1</h3>
-                        <p>$120,000</p>
-                    </article>
-                    <div class="contenedor-tarjerta">
-                    <article class="tarjeta-producto">
-                        <img src="./img/PULSE-WAVE X .png" alt="pulse-wave-x">
-                        <h3 class=""> PULSE-WAVE X </h3>
-                        <p>$90,000</p>
-                    </article>
-                    <div class="contenedor-tarjerta">
-                    <article class="tarjeta-producto">
-                        <img src="./img/VISION-ULTRA 49.png" alt="vision-ultra-49">
-                        <h3 class=""> VISION-ULTRA 49 </h3>
-                        <p>$129,000</p>
+                        <img class="tarjeta-producto__imagen" src="./img/NEON-STRIKE M1.png" alt="neon-strike-m1">
+                        <div class="tarjeta-producto__info">
+                            <p class="tarjeta-producto__catalogo"> Input Device</p>
+                            <h3 class="tarjeta-producto__titulo">NEON-STRIKE M1</h3>
+                            <div class="tarjeta-producto__fila-inferior">
+                                <p class="tarjeta-producto__precio">$120,000</p>
+                                <button class="tarjeta-producto__button" aria-label="agregar productos" type="button"><img src="./icon/add-shopping.png" alt="Agregar al Carrito"></button>
+                            </div>
+                        </div>
                     </article>
 
+                    <article class="tarjeta-producto">
+                        <img class="tarjeta-producto__imagen" src="./img/PULSE-WAVE X .png" alt="pulse-wave-x">
+                        <div class="tarjeta-producto__info">
+                            <p class="tarjeta-producto__catalogo"> Audio Systems </p>
+                            <h3 class="tarjeta-producto__titulo"> PULSE-WAVE X </h3>
+                            <div class="tarjeta-producto__fila-inferior">
+                                <p class="tarjeta-producto__precio">$90,000</p>
+                                <button class="tarjeta-producto__button" aria-label="agregar productos" type="button"><img src="./icon/add-shopping.png" alt="Agregar al Carrito"></button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="tarjeta-producto">
+                        <img class="tarjeta-producto__imagen" src="./img/VISION-ULTRA 49.png" alt="vision-ultra-49">
+                        <div class="tarjeta-producto__info"> 
+                            <p class="tarjeta-producto__catalogo">Graphics Hardware </p>
+                            <h3 class="tarjeta-producto__titulo">VISION-ULTRA 49 </h3>
+                            <div class="tarjeta-producto__fila-inferior">
+                                <p class="tarjeta-producto__precio">$129,000</p>
+                                <button class="tarjeta-producto__button" aria-label="agregar productos" type="button"><img src="./icon/add-shopping.png" alt="Agregar al Carrito"></button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="tarjeta-producto">
+                        <img class="tarjeta-producto__imagen" src="./img/Graphics Hardware.png" alt=" Graphics Hardware">
+                        <div class="tarjeta-producto__info"> 
+                            <p class="tarjeta-producto__catalogo">Displays</p>
+                            <h3 class="tarjeta-producto__titulo">CORE-REVERSE 4090 </h3>
+                            <div class="tarjeta-producto__fila-inferior">
+                                <p class="tarjeta-producto__precio">$190,000</p>
+                                <button class="tarjeta-producto__button" aria-label="agregar productos" type="button"><img src="./icon/add-shopping.png" alt="Agregar al Carrito"></button>
+                            </div>
+                        </div>
+                    </article>
                 </div>
-
             </section>
         
 
@@ -69,6 +98,18 @@
 
         
     </main>
-    <footer>footer ver despues</footer>
+    
+    
+    
+    
+    
+    <footer class="footer">
+    <p class="footer__descripcion">Sitio Realizado por Alex</p>
+    <ul class="footer__iconos">
+        <li><a href="https://wa.me/tunumero" target="_blank"><img class="footer__icono" src="./icon/icon-whatsapp.png" alt="Whatsapp"></a></li>
+        <li><a href="https://www.linkedin.com/in/alex-mat%C3%ADas-ortiz/" target="_blank"><img class="footer__icono" src="./icon/icon-linkedin.png" alt="LinkedIn"></a></li>
+        <li><a href="https://www.instagram.com/matiu112__?igsh=MWwzdWJjN2t0cnV0bA==" target="_blank"><img class="footer__icono" src="./icon/icon-instagram.png" alt="Instagram"></a></li>
+    </ul>
+</footer>
 </body>
 </html>
