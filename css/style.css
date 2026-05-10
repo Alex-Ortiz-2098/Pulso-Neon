@@ -22,11 +22,48 @@ html{
 }
 
 body{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   font-family: var(--fuente-cuerpo);
   font-size: 1.6rem;
   background-color: var(--color-fondo);
   color: white;
 }
+
+main{
+  flex: 1;
+}
+
+/* ESTILOS BASE */
+h1, h2, h3, h4 {
+    font-family: var(--fuente-titulo);
+    text-transform: uppercase;
+}
+
+.btn{
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 1.2rem 2.5rem;
+  }
+
+.btn--primario {
+    color: rgb(0, 93, 99);
+    background-image: linear-gradient(to bottom right, var(--color-primario), var(--color-primario_deg));
+    border: 1px var(--color-primario) solid;
+    border-radius: 0.40rem;
+}
+
+.btn--secundario{
+  background-image: none;
+  background-color: rgba(25, 25, 31, 0.89);
+  color: white;
+  border: 1px var(--color-neutral) solid;
+}
+
               /*Barra de navegacion*/
 .barra-superior {
     background-color: rgba(84, 84, 84, 0.12);
@@ -39,7 +76,6 @@ body{
     top: 0;
 }
 .boton-de-menu{
-  color: var(--color-primario); /* Por ahora, luego sera un icono*/
   cursor: pointer;
   background: none;
   border: none;
@@ -47,11 +83,7 @@ body{
 }
 
 .barra-superior__titulo a{
-  /* font-size: 1.5rem; */
-  font-family: var(--fuente-titulo);
-  text-transform: uppercase;
   text-decoration: none;
-  font-weight: 900;
   color: var(--color-primario);
   letter-spacing: -0.05em;
 }
@@ -61,7 +93,7 @@ body{
 }
 
 .barra-superior__nav{
-  margin: 0 auto;
+  margin-left: auto;
 }
 
 .barra-superior__lista{
@@ -81,7 +113,6 @@ body{
 }
 
 .boton-de-carrito{
-  color: var(--color-primario); /* Por ahora, luego sera un icono*/
   background: none;
   border: none;
   cursor: pointer;
@@ -123,8 +154,6 @@ body{
 .lanzamiento__titulo{
   font-size: 7rem;
   margin-bottom: 2rem;
-  font-family: var(--fuente-titulo);
-  text-transform: uppercase;
   line-height: 7rem;
   /* para que funcione deben estar los tres (-wekbit-, no es necesario solo es para navegadores antiguos)*/
   background-image: linear-gradient(to bottom right,rgb(255, 255, 255), var(--color-primario_deg)); /* define el gradiente. Pero en lugar de aplicarlo como fondo del div, sera del texto */ 
@@ -146,32 +175,14 @@ body{
   gap: 2rem;
 }
 
-.lanzamiento__boton{
-  text-transform: uppercase;
-  font-weight: 700;
-  color: rgb(0 93 99);
-  letter-spacing: 1px;
-  padding: 1.2rem 2.5rem;  
-  background-image: linear-gradient(to bottom right, var(--color-primario), var(--color-primario_deg)); /* define el gradiente. Pero en lugar de aplicarlo como fondo del div, sera del texto */ 
-  border: 1px var(--color-primario) solid;
-  border-radius: 0.40rem;
-  cursor: pointer;
-}
 
-.lanzamiento__boton.lanzamiento__boton--secundario{
+.lanzamiento__boton{
   text-decoration: none;
-  font-size: 1.2rem;
-  background-image: none;
-  background-color: rgba(25, 25, 31, 0.89);
-  color: white;
-  border: 1px var(--color-neutral) solid;
 }
 
 /* CATALOGO */
 .lista-productos__titulo{
-  font-family: var(--fuente-titulo);
   font-size: 3rem;
-  text-transform: uppercase;
   font-weight: 600; 
   text-align: center;
   padding-bottom: 2rem;
@@ -220,8 +231,6 @@ body{
 .tarjeta-producto__titulo {
     font-size: 1.8rem;
     font-weight: 700;
-    font-family: var(--fuente-titulo);
-    text-transform: uppercase;
     color: white;
 }
 
@@ -288,6 +297,58 @@ body{
     opacity: 0.7;
 }
 
+/* PAGINA CONTACTO */
+.titulo-reserva{
+  text-align: center;  
+  font-size: 2.5rem ;
+  margin-top: 2rem;
+}
+/* formulario */
+.contacto-grid{
+  display: flex;
+  gap: 4rem;
+  justify-content: center;
+  margin: 2rem 0;
+}
+.formulario-contacto, .soporte{
+    width: 500px;/* Define el ancho de la tarjeta */
+    padding: 20px;
+    background-color: var(--color-neutral);
+}
+
+.formulario-contacto__grupo{
+    margin-bottom: 15px; /*Le agrega un margen (espacio hacia afuera) en la parte de abajo a cada grupo.*/
+}
+
+.formulario-contacto__label{
+    display: block; /*Controla cómo se muestra el elemento, en este caso obligándolo a comportarse como un bloque.*/
+    margin-bottom: 5px;
+    color:white;
+    font-family: var(--fuente-titulo);
+    text-transform: uppercase;
+}
+
+.formulario-contacto__input {
+    margin-top: 1rem;
+    width: 100%; /*Le ordena a la cajita que se estire hasta ocupar el 100% del ancho que le permite su contenedor padre (los 300px de la tarjeta).*/
+    padding: 8px; /*Agrega espacio adentro de la cajita blanca*/
+}
+
+/* SOPORTE */
+
+.soporte__titulo{
+  margin-bottom: 1rem;
+}
+
+.informacion__termino{
+  margin: 1rem 0;
+  font-family: var(--fuente-titulo);
+  text-transform: uppercase;
+}
+
+.informacion__valor{
+  color: var(--color-parrafo);
+}
 
 
 

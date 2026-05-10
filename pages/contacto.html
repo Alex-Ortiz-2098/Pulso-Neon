@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,20 +20,41 @@
         </header>
         
         <main>
-            <form action="https://formspree.io/f/mpqbrjqw" method="POST">
-                <label>
-                    Your email:
-                    <input type="email" name="email">
-                </label>
-                <label>
-                    Your message:
-                    <textarea name="message"></textarea>
-                </label>
-                <!-- your other form fields go here -->
-                <button type="submit">Send</button>
-            </form>
+            <h2 class="titulo-reserva">Reserva una cita</h2>
+            <div class="contacto-grid">
+                <form class="formulario-contacto"action="https://formspree.io/f/mpqbrjqw" method="post" autocomplete="on">
+                    <div class="formulario-contacto__grupo">
+                        <label class="formulario-contacto__label" for="Nombre"> Nombre:
+                        <input class="formulario-contacto__input" type="text" id="Nombre" name="Nombre" placeholder="Ej. Manuel Alvarez" required></label>
+                    </div>
+                    <div class="formulario-contacto__grupo">
+                        <label class="formulario-contacto__label" for="Correo">Correo Electronico: 
+                        <input class="formulario-contacto__input" type="email" id="Correo" name="Correo" placeholder="Ej. ManuelAlvarez@gmail.com" required></label>
+                    </div>
+                    <button class="btn btn--primario" type="submit">Enviar</button>
+                    <button class="btn btn--secundario" type="reset">Reiniciar</button>
+                    <!--disabled: Hace que esa opción esté deshabilitada/ 
+                        selected:Le dice al navegador que esta es la frase que tiene que mostrar por defecto/
+                        hidden: la frase "OPCIONES..." se oculte del listado
+                    -->
+                </form>
 
+                <section class="soporte">
+                <h3 class="soporte__titulo">Soporte Tecnico</h3>
+                <dl class="informacion">
+                    <dt class="informacion__termino">Email soporte Tecnico</dt>
+                    <dd class="informacion__valor">soporte_neon_pulse21@gmail.com</dd>
 
+                    <dt class="informacion__termino">Telefono de soporte Tecnico</dt>
+                    <dd class="informacion__valor">+54 91167876533</dd>
+
+                    <dt class="informacion__termino">Ubicacion de atencion al cliente</dt>
+                    <dd class="informacion__valor">Av. Sta. Fe 1860, C1123 Cdad. Autónoma de Buenos Aires</dd>
+                </dl>
+            </div>
+            
+            
+            </section>     
         </main>
 
         <footer class="footer">
