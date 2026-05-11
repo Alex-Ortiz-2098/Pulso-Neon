@@ -36,6 +36,7 @@ main{
 }
 
 /* ESTILOS BASE */
+
 h1, h2, h3, h4 {
     font-family: var(--fuente-titulo);
     text-transform: uppercase;
@@ -64,7 +65,13 @@ h1, h2, h3, h4 {
   border: 1px var(--color-neutral) solid;
 }
 
-              /*Barra de navegacion*/
+.titulo-linea{
+  border-bottom: 2px solid var(--color-primario);
+  padding-bottom: 0.8rem;
+}
+
+/* BARRA DE NAVEGACION*/
+
 .barra-superior {
     background-color: rgba(84, 84, 84, 0.12);
     backdrop-filter: blur(20px); /* Sirve para agregar distintos efectos(en inspeccionar hay mas)*/
@@ -181,11 +188,12 @@ h1, h2, h3, h4 {
 }
 
 /* CATALOGO */
+
 .lista-productos__titulo{
   font-size: 3rem;
   font-weight: 600; 
   text-align: center;
-  padding-bottom: 2rem;
+  padding-bottom: 3rem;
 }
 
 .lista-productos {
@@ -264,7 +272,8 @@ h1, h2, h3, h4 {
     height: 2rem;
 }
 
-/* footer */
+/* FOOTER */
+
 .footer {
     background-color: var(--color-neutral);
     width: 100%;
@@ -298,12 +307,49 @@ h1, h2, h3, h4 {
 }
 
 /* PAGINA CONTACTO */
+
+  /* FONDO */
+
+.fondo-glow {
+    position: fixed;    /* fijo en la pantalla */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;  /* que no interfiera con los clicks */
+    z-index: -1;           /* detrás de todo el contenido */
+}
+
+.fondo-glow__orb {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(120px);   /* difuminado fuerte */
+    opacity: 0.25;         /* transparencia */
+}
+
+.fondo-glow__orb--cyan {
+    width: 50rem;
+    height: 50rem;
+    background-color: var(--color-primario);
+    top: -10rem;
+    left: -10rem;
+}
+
+.fondo-glow__orb--magenta {
+    width: 40rem;
+    height: 40rem;
+    background-color: #9000ff;
+    bottom: 10rem;
+    right: -5rem;
+}
 .titulo-reserva{
   text-align: center;  
-  font-size: 2.5rem ;
+  font-size: 3rem ;  
   margin-top: 2rem;
 }
-/* formulario */
+
+/* FORMULARIO  */
+
 .contacto-grid{
   display: flex;
   gap: 4rem;
@@ -322,7 +368,6 @@ h1, h2, h3, h4 {
 
 .formulario-contacto__label{
     display: block; /*Controla cómo se muestra el elemento, en este caso obligándolo a comportarse como un bloque.*/
-    margin-bottom: 5px;
     color:white;
     font-family: var(--fuente-titulo);
     text-transform: uppercase;
@@ -340,17 +385,61 @@ h1, h2, h3, h4 {
   margin-bottom: 1rem;
 }
 
+.informacion{
+  border-left: 2px solid var(--color-primario); /* ← la línea */
+  padding-left: 1rem; /* ← espacio entre la línea y el texto */
+}
+
 .informacion__termino{
   margin: 1rem 0;
   font-family: var(--fuente-titulo);
   text-transform: uppercase;
+  
 }
 
 .informacion__valor{
-  color: var(--color-parrafo);
+  font-size: 1.5rem;
+  color: #b563f4c4
 }
 
+@media (max-width: 768px) {
+  
+  /* HOME */
+  
+  .lanzamiento{
+    min-height: auto;
+    padding: 4rem 3rem;
+  }
+
+  .lanzamiento__contenedor{
+    padding: 1rem;
+  }
+
+  .lista-productos__contenedor{
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));      
+  }
+
+    /* CONTACTO */
+
+  .titulo-reserva{
+    font-size: 4rem;
+    padding: 7rem 3rem;
+  }
+
+  .contacto-grid{
+    flex-direction: column;
+    align-items: center;
+    gap: 6rem;
+  }
+  .formulario-contacto, .soporte{
+    width: 80%;
+  }
+
+  .formulario-contacto__input{
+    margin: 2rem 0;
+  }
 
 
+}
 
 /* CONTROL+K+C */
