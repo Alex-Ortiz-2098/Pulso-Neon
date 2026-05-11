@@ -438,8 +438,6 @@ h1, h2, h3, h4 {
   .formulario-contacto__input{
     margin: 2rem 0;
   }
-
-
 }
 
 @media (max-width: 480px) {
@@ -481,7 +479,11 @@ h1, h2, h3, h4 {
 }
 
 .tarjeta-producto__precio {
-    font-size: 1.5rem;
+  font-size: 1.2rem;
+}
+
+  .tarjeta-producto__button {
+    padding: 0.7rem;
 }
 
   .titulo-reserva{
@@ -490,10 +492,9 @@ h1, h2, h3, h4 {
   }
 
   .contacto-grid{
-    flex-direction: column;
-    align-items: center;
     gap: 2rem;
+    margin: 2rem 0;
   }
-
 }
+
 /* CONTROL+K+C */
