@@ -60,7 +60,7 @@ Este proyecto es de código abierto y se distribuye bajo la [Licencia MIT](https
 *Desarrollador Front-End*
 
 * 📧 Email: [mati2000418@gmail.com](mailto:mati2000418@gmail.com)
-* 💼 LinkedIn: [Tu Enlace a LinkedIn]
+* 💼 LinkedIn: [https://www.linkedin.com/in/alex-mat%C3%ADas-ortiz/]
 * 💻 GitHub: [@Alex-Ortiz-2098](https://github.com/Alex-Ortiz-2098)
 
 ---
