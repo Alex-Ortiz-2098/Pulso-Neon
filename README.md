@@ -28,7 +28,9 @@ A continuación, se detalla la adaptación visual de la interfaz en diferentes d
 
 ### Vista Móvil / Tablet (Responsive)
 **Adaptación de la Interfaz:**
-![Vista Móvil](./assets/home-mobile.png)
+![Vista Móvil Pagina Principal](https://github.com/user-attachments/assets/e38ecde4-ab96-4615-8583-0c5eb9fca848)
+![Vista Móvil Contacto](https://github.com/user-attachments/assets/26dc7f59-574b-4cee-ac4d-7f38a70bc3ce)
+
 
 
 ## 📦 Instalación y Uso Local
