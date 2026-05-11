@@ -423,7 +423,7 @@ h1, h2, h3, h4 {
 
   .titulo-reserva{
     font-size: 4rem;
-    padding: 7rem 3rem;
+    padding: 7rem 0;
   }
 
   .contacto-grid{
@@ -442,4 +442,58 @@ h1, h2, h3, h4 {
 
 }
 
+@media (max-width: 480px) {
+  .barra-superior__titulo{
+    font-size: 1.6rem;
+  }
+
+  .barra-superior__enlace, .barra-superior__enlace:visited{
+  font-size: 1.4rem;
+  }
+
+  .lanzamiento__titulo {
+        font-size: 4rem;
+        line-height: 4.2rem;
+    }
+
+  .lista-productos__titulo{
+    font-size: 1.7rem;
+    text-align:left;
+    padding-bottom: 3rem;
+  }
+
+  .lista-productos__contenedor {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));    
+      gap: 2rem;
+  }
+
+  .tarjeta-producto__catalogo {
+    font-size: 1rem;
+    font-family: var(--fuente-titulo);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: rgba(177, 175, 175, 0.7);
+}
+
+.tarjeta-producto__titulo {
+    font-size: 1.4rem;
+}
+
+.tarjeta-producto__precio {
+    font-size: 1.5rem;
+}
+
+  .titulo-reserva{
+    font-size: 3rem;
+    padding: 2rem 0;
+  }
+
+  .contacto-grid{
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+}
 /* CONTROL+K+C */
