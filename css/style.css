@@ -345,7 +345,7 @@ h1, h2, h3, h4 {
 .titulo-reserva{
   text-align: center;  
   font-size: 3rem ;  
-  margin-top: 2rem;
+  margin-top: 3rem;
 }
 
 /* FORMULARIO  */
@@ -354,7 +354,7 @@ h1, h2, h3, h4 {
   display: flex;
   gap: 4rem;
   justify-content: center;
-  margin: 2rem 0;
+  margin: 6rem 0;
 }
 .formulario-contacto, .soporte{
     width: 500px;/* Define el ancho de la tarjeta */
