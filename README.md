@@ -19,9 +19,12 @@ A continuación, se detalla la adaptación visual de la interfaz en diferentes d
 ### Vista de Escritorio (Desktop)
 **Página Principal (Catálogo de Productos):**
 ![Vista Principal Escritorio](https://github.com/user-attachments/assets/0babc3a7-e882-4c55-b0ef-320a59435f3c)
+![Vista de Catalogo](https://github.com/user-attachments/assets/6e8c3c15-721e-4043-9c09-628a8f9f8907)
+
 
 **Página de Contacto:**
-![Vista Contacto Escritorio](./assets/contacto-desktop.png)
+![Vista Contacto Escritorio](https://github.com/user-attachments/assets/f770b30b-0db3-48ba-b671-05d0207f7d55)
+
 
 ### Vista Móvil / Tablet (Responsive)
 **Adaptación de la Interfaz:**
