@@ -18,7 +18,7 @@ A continuación, se detalla la adaptación visual de la interfaz en diferentes d
 
 ### Vista de Escritorio (Desktop)
 **Página Principal (Catálogo de Productos):**
-![Vista Principal Escritorio](./assets/home-desktop.png)
+![Vista Principal Escritorio](<img width="1366" height="617" alt="Captura de pantalla_2026-05-11_17-19-52" src="https://github.com/user-attachments/assets/0babc3a7-e882-4c55-b0ef-320a59435f3c" />)
 
 **Página de Contacto:**
 ![Vista Contacto Escritorio](./assets/contacto-desktop.png)
@@ -51,16 +51,13 @@ La arquitectura de carpetas está diseñada para mantener una separación clara 
 ## 🤝 Contribución
 Las sugerencias y contribuciones para mejorar la eficiencia del código o la experiencia de usuario son bienvenidas. Siéntete libre de hacer un *fork* del repositorio y enviar un *pull request*.
 
-## 📝 Licencia
-Este proyecto es de código abierto y se distribuye bajo la [Licencia MIT](https://opensource.org/licenses/MIT).
-
 ## 📬 Contacto y Redes
 
 **Alex Matías Ortiz**  
 *Desarrollador Front-End*
 
 * 📧 Email: [mati2000418@gmail.com](mailto:mati2000418@gmail.com)
-* 💼 LinkedIn: [https://www.linkedin.com/in/alex-mat%C3%ADas-ortiz/]
+* 💼 LinkedIn: [Alex-Ortiz](https://www.linkedin.com/in/alex-mat%C3%ADas-ortiz/)
 * 💻 GitHub: [@Alex-Ortiz-2098](https://github.com/Alex-Ortiz-2098)
 
 ---
