@@ -18,7 +18,7 @@ A continuación, se detalla la adaptación visual de la interfaz en diferentes d
 
 ### Vista de Escritorio (Desktop)
 **Página Principal (Catálogo de Productos):**
-![Vista Principal Escritorio](<img width="1366" height="617" alt="Captura de pantalla_2026-05-11_17-19-52" src="https://github.com/user-attachments/assets/0babc3a7-e882-4c55-b0ef-320a59435f3c" />)
+![Vista Principal Escritorio](https://github.com/user-attachments/assets/0babc3a7-e882-4c55-b0ef-320a59435f3c)
 
 **Página de Contacto:**
 ![Vista Contacto Escritorio](./assets/contacto-desktop.png)
