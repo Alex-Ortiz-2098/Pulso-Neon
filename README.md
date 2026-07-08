@@ -48,7 +48,10 @@ Al ser un proyecto Front-End, no requiere de la instalación de dependencias com
 ## 📂 Estructura del Proyecto
 La arquitectura fue modularizada para separar la lógica del carrito, el almacenamiento y la interfaz:
 
-text
+## 📂 Estructura del Proyecto
+La arquitectura fue modularizada para separar la lógica del carrito, el almacenamiento y la interfaz:
+
+```text
 ├── index.html            # Landing Page
 ├── pages/
 │   ├── contacto.html     # Formulario de contacto
