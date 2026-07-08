@@ -51,6 +51,7 @@ La arquitectura fue modularizada para separar la lógica del carrito, el almacen
 ## 📂 Estructura del Proyecto
 La arquitectura fue modularizada para separar la lógica del carrito, el almacenamiento y la interfaz:
 
+```text
 Pulso-Neon/
 ├── index.html
 ├── pages/
