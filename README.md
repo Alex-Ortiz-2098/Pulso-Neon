@@ -68,9 +68,9 @@ Pulso-Neon/
 │   ├── funcionesCarrito.js
 │   ├── ui.js
 │   └── storage.js
-└── assets/
-    ├── img/
-    └── icon/
+├── img/
+├── icon/
+
 ```
 
 ## 🤝 Contribución
