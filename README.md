@@ -71,6 +71,7 @@ Pulso-Neon/
 └── assets/
     ├── img/
     └── icon/
+```
 
 ## 🤝 Contribución
 Las sugerencias y contribuciones para mejorar la eficiencia del código o la experiencia de usuario son bienvenidas. Siéntete libre de hacer un *fork* del repositorio y enviar un *pull request*.
