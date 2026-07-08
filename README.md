@@ -51,23 +51,25 @@ La arquitectura fue modularizada para separar la lógica del carrito, el almacen
 ## 📂 Estructura del Proyecto
 La arquitectura fue modularizada para separar la lógica del carrito, el almacenamiento y la interfaz:
 
-```text
-├── index.html            # Landing Page
+Pulso-Neon/
+├── index.html
 ├── pages/
-│   ├── contacto.html     # Formulario de contacto
-│   └── carrito.html      # Gestión de compras
+│   ├── contacto.html
+│   └── carrito.html
 ├── css/
-│   └── style.css         # Estilos Neón / Cyberpunk
+│   └── style.css
 ├── data/
-│   └── productos.json    # Base de datos local de productos
+│   └── productos.json
 ├── js/
-│   ├── index.js          # Controlador principal del catálogo
-│   ├── carrito.js        # Lógica de la página de carrito
-│   ├── contacto.js       # Validación de formularios
-│   ├── funcionesCarrito.js # Lógica matemática del carrito
-│   ├── ui.js             # Gestión de interfaz y alertas
-│   └── storage.js        # Persistencia en LocalStorage
-└── assets/               # Imágenes e iconos
+│   ├── index.js
+│   ├── carrito.js
+│   ├── contacto.js
+│   ├── funcionesCarrito.js
+│   ├── ui.js
+│   └── storage.js
+└── assets/
+    ├── img/
+    └── icon/
 
 ## 🤝 Contribución
 Las sugerencias y contribuciones para mejorar la eficiencia del código o la experiencia de usuario son bienvenidas. Siéntete libre de hacer un *fork* del repositorio y enviar un *pull request*.
