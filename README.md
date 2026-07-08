@@ -1,16 +1,19 @@
-# 🛍️ Pulso Neón - Aplicación Web E-Commerce
+# ⚡ Pulso Neón - Aplicación Web E-Commerce
 
-Pulso Neón es una interfaz Front-End de comercio electrónico diseñada para proporcionar a los usuarios una experiencia de compra intuitiva y fluida. Este proyecto se enfoca en el diseño web semántico, la maquetación responsiva y el desarrollo de interfaces interactivas para la exploración de productos y la gestión del carrito de compras. 
+Pulso Neón es una plataforma de e-commerce gamer. Este proyecto evoluciona desde una base estática hacia una **aplicación web dinámica**, integrando lógica de programación, persistencia de datos y consumo de APIs.
 
-## 🚀 Características Principales
-* **Exploración de Catálogo:** Interfaz optimizada para la navegación de productos, presentando información detallada y llamadas a la acción (CTAs) claras.
-* **Formulario de Contacto Integrado:** Página de contacto funcional con procesamiento de datos en vivo para la gestión de consultas.
-* **Diseño Responsivo:** Arquitectura visual adaptativa, asegurando una experiencia de usuario consistente en dispositivos móviles, tablets y escritorios.
-* **Identidad Visual:** Integración de recursos tipográficos y gráficos optimizados para fortalecer la usabilidad y la estética de la interfaz.
+## 🚀 Funcionalidades Dinámicas Implementadas
+* **Catálogo Dinámico:** Los productos se renderizan automáticamente mediante `Fetch API` consumiendo un archivo JSON (`data/productos.json`).
+* **Carrito de Compras Funcional:** * Agregar productos desde el catálogo o la sección de lanzamiento.
+    * Visualización de lista de productos, cálculo de precios y totales.
+    * Eliminación individual de productos y vaciado total del carrito.
+* **Persistencia de Datos:** Uso de `localStorage` para que los productos agregados al carrito se mantengan incluso al recargar o cerrar el navegador.
+* **Validación de Formularios:** Validación en tiempo real (campos obligatorios y formato de correo electrónico) antes del envío a Formspree.
 
 ## 🛠️ Tecnologías Utilizadas
-* **Estructura y Estilos:** HTML5, CSS3.
-* **Integraciones y APIs:** Formspree API (para la recepción y gestión de formularios de contacto), Google Fonts API.
+* **Frontend:** HTML5 (Semántico), CSS3 (Flexbox, Grid, Responsive Design).
+* **Lógica:** JavaScript (ES6 Modules, DOM Manipulation, Fetch API, LocalStorage).
+* **Integraciones:** Formspree API (gestión de formularios).
 
 ## 📸 Vistas del Proyecto
 
@@ -43,15 +46,25 @@ Al ser un proyecto Front-End, no requiere de la instalación de dependencias com
 2. Abrir el archivo `index.html` en tu navegador web de preferencia, o ejecutarlo a través de una extensión como Live Server en tu editor de código.
 
 ## 📂 Estructura del Proyecto
-La arquitectura de carpetas está diseñada para mantener una separación clara entre estructura, presentación y lógica:
+La arquitectura fue modularizada para separar la lógica del carrito, el almacenamiento y la interfaz:
 
-```text
-├── index.html          # Estructura principal de la Landing Page
-├── pages/              # Vistas secundarias (ej. contacto.html)
-├── css/                # Hojas de estilo y diseño responsivo
-├── js/                 # Lógica de interacción y gestión del carrito
-└── assets/             # Recursos visuales (imágenes, iconos, logos)
-```
+text
+├── index.html            # Landing Page
+├── pages/
+│   ├── contacto.html     # Formulario de contacto
+│   └── carrito.html      # Gestión de compras
+├── css/
+│   └── style.css         # Estilos Neón / Cyberpunk
+├── data/
+│   └── productos.json    # Base de datos local de productos
+├── js/
+│   ├── index.js          # Controlador principal del catálogo
+│   ├── carrito.js        # Lógica de la página de carrito
+│   ├── contacto.js       # Validación de formularios
+│   ├── funcionesCarrito.js # Lógica matemática del carrito
+│   ├── ui.js             # Gestión de interfaz y alertas
+│   └── storage.js        # Persistencia en LocalStorage
+└── assets/               # Imágenes e iconos
 
 ## 🤝 Contribución
 Las sugerencias y contribuciones para mejorar la eficiencia del código o la experiencia de usuario son bienvenidas. Siéntete libre de hacer un *fork* del repositorio y enviar un *pull request*.
