@@ -1,0 +1,30 @@
+[
+  {
+    "id": "1",
+    "nombre": "NEON-STRIKE M1",
+    "precio": 120000,
+    "img": "img/NEON-STRIKE M1.png",
+    "categoria": "Input Device"
+  },
+  {
+    "id": "2",
+    "nombre": "PULSE-WAVE X",
+    "precio": 90000,
+    "img": "img/PULSE-WAVE X .png",
+    "categoria": "Audio Systems"
+  },
+  {
+    "id": "3",
+    "nombre": "VISION-ULTRA 49",
+    "precio": 129000,
+    "img": "img/VISION-ULTRA 49.png",
+    "categoria": "Graphics Hardware"
+  },
+  {
+    "id": "4",
+    "nombre": "CORE-REVERSE 4090",
+    "precio": 190000,
+    "img": "img/Graphics Hardware.png",
+    "categoria": "Displays"
+  }
+]
