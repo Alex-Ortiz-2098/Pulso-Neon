@@ -16,7 +16,10 @@
                     <li><a href="../pages/contacto.html" class="barra-superior__enlace">Contacto</a></li>
                 </ul>
             </nav>
-                <button aria-label="carrito" type="button" class= "boton-de-carrito" data-icon="carrito"><img src="../icon/shopping.svg" alt="boton de carrito"></button>
+                <a href="../pages/carrito.html" aria-label="carrito" class="boton-de-carrito" style="text-decoration: none;">
+    <img src="../icon/shopping.svg" alt="boton de carrito">
+    <span id="contador-carrito" style="color: var(--color-primario); font-weight: bold; margin-left: 5px;">0</span>
+</a>
         </header>
         <main>
             <div class="fondo-glow">
@@ -26,21 +29,18 @@
             
             <h2 class="titulo-reserva"><span class="titulo-linea">Reserva</span> una cita</h2>
             <div class="contacto-grid">
-                <form class="formulario-contacto"action="https://formspree.io/f/mpqbrjqw" method="post" autocomplete="on">
+                <form class="formulario-contacto" action="https://formspree.io/f/mpqbrjqw" method="post" autocomplete="on" novalidate>                    
                     <div class="formulario-contacto__grupo">
-                        <label class="formulario-contacto__label" for="Nombre"> Nombre:
-                        <input class="formulario-contacto__input" type="text" id="Nombre" name="Nombre" placeholder="Ej. Manuel Alvarez" required></label>
+                        <label class="formulario-contacto__label" for="nombre">Nombre:
+                        <input class="formulario-contacto__input" type="text" id="nombre" name="nombre" placeholder="Ej. Manuel Alvarez" required></label>
                     </div>
+                    
                     <div class="formulario-contacto__grupo">
-                        <label class="formulario-contacto__label" for="Correo">Correo Electronico: 
-                        <input class="formulario-contacto__input" type="email" id="Correo" name="Correo" placeholder="Ej. ManuelAlvarez@gmail.com" required></label>
+                        <label class="formulario-contacto__label" for="email">Correo Electrónico: 
+                        <input class="formulario-contacto__input" type="email" id="email" name="email" placeholder="Ej. ManuelAlvarez@gmail.com" required></label>
                     </div>
                     <button class="btn btn--primario" type="submit">Enviar</button>
                     <button class="btn btn--secundario" type="reset">Reiniciar</button>
-                    <!--disabled: Hace que esa opción esté deshabilitada/ 
-                        selected:Le dice al navegador que esta es la frase que tiene que mostrar por defecto/
-                        hidden: la frase "OPCIONES..." se oculte del listado
-                    -->
                 </form>
 
                 <section class="soporte">
@@ -69,5 +69,5 @@
                 <li><a href="https://www.instagram.com/matiu112__?igsh=MWwzdWJjN2t0cnV0bA==" target="_blank"><img class="footer__icono" src="../icon/icon-instagram.png" alt="Instagram"></a></li>
             </ul>
         </footer>
-    </body>
+<script type="module" src="../js/contacto.js"></script></body>
 </html>

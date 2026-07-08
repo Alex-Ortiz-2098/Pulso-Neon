@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Tu Carrito - Pulso Neon</title>
+</head>
+<body>
+    <header class="barra-superior">
+        <button aria-label="menu" type="button" class="boton-de-menu" data-icon="menu">
+            <img src="../icon/menu.svg" alt="boton de menu">
+        </button>
+        <h1 class="barra-superior__titulo"><a href="../index.html">Pulso Neon</a></h1>
+        <nav class="barra-superior__nav">
+            <ul class="barra-superior__lista">
+                <li><a href="../index.html" class="barra-superior__enlace">Home</a></li>
+                <li><a href="../pages/contacto.html" class="barra-superior__enlace">Contacto</a></li>
+            </ul>
+        </nav>
+        
+        <a href="../pages/carrito.html" aria-label="carrito" class="boton-de-carrito" style="text-decoration: none;">
+            <img src="../icon/shopping.svg" alt="boton de carrito">
+            <span id="contador-carrito" style="color: var(--color-primario); font-weight: bold; margin-left: 5px;">0</span>
+        </a>
+    </header>
+
+    <main>
+        <div class="fondo-glow">
+            <div class="fondo-glow__orb fondo-glow__orb--cyan"></div>
+            <div class="fondo-glow__orb fondo-glow__orb--magenta"></div>
+        </div>
+        
+        <h2 class="titulo-reserva"><span class="titulo-linea">Tu Equipo</span> Seleccionado</h2>
+        
+        <div class="contacto-grid" style="display: flex; flex-direction: column; align-items: center; gap: 3rem; margin-bottom: 5px;">
+            
+            <section id="contenedor-carrito" class="soporte" style="width: 100%; max-width: 800px; display: flex; flex-direction: column; gap: 2rem;">
+                </section>
+
+            <div id="acciones-carrito" style="width: 100%; max-width: 800px; display: flex; flex-direction: column; align-items: center; gap: 2rem; border-top: 1px solid var(--color-neutral); padding-top: 2rem; text-align: center;">
+                </div>
+            
+        </div>
+        <div style="height: 1px; margin-top: 20px;"></div>
+    </main>
+
+    <footer class="footer">
+        <p class="footer__descripcion">Sitio Realizado por Alex</p>
+        <ul class="footer__iconos">
+            <li><a href="https://wa.me/tunumero" target="_blank"><img class="footer__icono" src="../icon/icon-whatsapp.png" alt="Whatsapp"></a></li>
+            <li><a href="https://www.linkedin.com/in/alex-mat%C3%ADas-ortiz/" target="_blank"><img class="footer__icono" src="../icon/icon-linkedin.png" alt="LinkedIn"></a></li>
+            <li><a href="https://www.instagram.com/matiu112__?igsh=MWwzdWJjN2t0cnV0bA==" target="_blank"><img class="footer__icono" src="../icon/icon-instagram.png" alt="Instagram"></a></li>
+        </ul>
+    </footer>
+
+    <script type="module" src="../js/carrito.js"></script>
+</body>
+</html>

@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <header class="barra-superior">         <!-- Todo lo relacionado con la Barra superior -->
@@ -18,7 +18,10 @@
                 <li><a href="./pages/contacto.html" class="barra-superior__enlace">Contacto</a></li>
             </ul>
         </nav>
-                <button aria-label="carrito" type="button" class= "boton-de-carrito" data-icon="carrito"><img src="./icon/shopping.svg" alt="boton de carrito"></button>
+            <a href="./pages/carrito.html" aria-label="carrito" class="boton-de-carrito" style="text-decoration: none;">
+    <img src="./icon/shopping.svg" alt="boton de carrito">
+    <span id="contador-carrito" style="color: var(--color-primario); font-weight: bold; margin-left: 5px;">0</span>
+</a>
     </header>
 
     <main>
@@ -29,80 +32,22 @@
                     <p class="lanzamiento__descripcion">El Redragon K552 Kumara no es un teclado gamer común. Tiene ultima-tecnología, 
                         características premium, plástico ABS, teclas moldeadas, switches de gama alta, retroiluminación LED RGB..</p>
                     <div class="lanzamiento__botones">
-                        <button aria-label="Comprar" type="button" class="btn btn--primario">Comprar</button>
+                        <button aria-label="Comprar" id="btn-lanzamiento" type="button" class="btn btn--primario">Comprar</button>
                         <a aria-label="Inspeccionar" href="./index.html" class="btn btn--secundario lanzamiento__boton">ver mas</a>
                     </div>
-                </div>
-                
+                </div>          
             </section>
-
             <section class="lista-productos">
-                <h3 class="lista-productos__titulo"><span class="titulo-linea">Catalogo</span> disponibles</h3>
-                <div class="lista-productos__contenedor">
-                    <article class="tarjeta-producto">
-                        <img class="tarjeta-producto__imagen" src="./img/NEON-STRIKE M1.png" alt="neon-strike-m1">
-                        <div class="tarjeta-producto__info">
-                            <p class="tarjeta-producto__catalogo"> Input Device</p>
-                            <h4 class="tarjeta-producto__titulo">NEON-STRIKE M1</h4>
-                            <div class="tarjeta-producto__fila-inferior">
-                                <p class="tarjeta-producto__precio">$120,000</p>
-                                <button class="tarjeta-producto__button" aria-label="agregar productos" type="button"><img src="./icon/add-shopping.png" alt="Agregar al Carrito"></button>
-                            </div>
-                        </div>
-                    </article>
+    <div class="titulos-secciones">
+        <h3 class="lista-productos__titulo">CATÁLOGO PERIFÉRICOS</h3>
+        <p class="lista-productos__subtitulo">DESCUBRE NUESTRO EQUIPAMIENTO GAMER</p>
+    </div>
 
-                    <article class="tarjeta-producto">
-                        <img class="tarjeta-producto__imagen" src="./img/PULSE-WAVE X .png" alt="pulse-wave-x">
-                        <div class="tarjeta-producto__info">
-                            <p class="tarjeta-producto__catalogo"> Audio Systems </p>
-                            <h4 class="tarjeta-producto__titulo"> PULSE-WAVE X </h4>
-                            <div class="tarjeta-producto__fila-inferior">
-                                <p class="tarjeta-producto__precio">$90,000</p>
-                                <button class="tarjeta-producto__button" aria-label="agregar productos" type="button"><img src="./icon/add-shopping.png" alt="Agregar al Carrito"></button>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="tarjeta-producto">
-                        <img class="tarjeta-producto__imagen" src="./img/VISION-ULTRA 49.png" alt="vision-ultra-49">
-                        <div class="tarjeta-producto__info"> 
-                            <p class="tarjeta-producto__catalogo">Graphics Hardware </p>
-                            <h4 class="tarjeta-producto__titulo">VISION-ULTRA 49 </h4>
-                            <div class="tarjeta-producto__fila-inferior">
-                                <p class="tarjeta-producto__precio">$129,000</p>
-                                <button class="tarjeta-producto__button" aria-label="agregar productos" type="button"><img src="./icon/add-shopping.png" alt="Agregar al Carrito"></button>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="tarjeta-producto">
-                        <img class="tarjeta-producto__imagen" src="./img/Graphics Hardware.png" alt=" Graphics Hardware">
-                        <div class="tarjeta-producto__info"> 
-                            <p class="tarjeta-producto__catalogo">Displays</p>
-                            <h4 class="tarjeta-producto__titulo">CORE-REVERSE 4090 </h4>
-                            <div class="tarjeta-producto__fila-inferior">
-                                <p class="tarjeta-producto__precio">$190,000</p>
-                                <button class="tarjeta-producto__button" aria-label="agregar productos" type="button"><img src="./icon/add-shopping.png" alt="Agregar al Carrito"></button>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-            </section>
+    <div class="lista-productos__contenedor" id="contenedor-tarjetas">
         
-
-
-
-
-
-
-
-        
+        </div>
+</section>
     </main>
-    
-    
-    
-    
-    
     <footer class="footer">
     <p class="footer__descripcion">Sitio Realizado por Alex</p>
     <ul class="footer__iconos">
@@ -111,5 +56,6 @@
         <li><a href="https://www.instagram.com/matiu112__?igsh=MWwzdWJjN2t0cnV0bA==" target="_blank"><img class="footer__icono" src="./icon/icon-instagram.png" alt="Instagram"></a></li>
     </ul>
 </footer>
+<script type="module" src="./js/index.js"></script>
 </body>
 </html>
